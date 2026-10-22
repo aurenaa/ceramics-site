@@ -1,0 +1,40 @@
+:root {
+  --onyx: #0B0B0Bff;
+  --mahogany-red: #A41215ff;
+  --bright-red: #F5161C;
+  --smoky-rose: #8C5450ff;
+  --light-coral: #D89089ff;
+  --coffee-bean: #220606ff;
+  --rich-mahogany: #350306ff;
+  --black-cherry: #630C0Dff;
+  --black: #070707ff;
+  --shadow-grey: #201B1Bff;
+}
+
+body {
+  background-color: var(--onyx);
+  color: #f8f9fa;
+}
+
+.logo-box {
+  padding: 6px 12px;
+  border-radius: 6px;
+  line-height: 1.1;
+}
+
+.logo-bottom {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: var(--bright-red); 
+  font-weight: 700;
+  -webkit-text-stroke: 0.5px var(--shadow-grey);
+}
+
+.logo-top {
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  font-weight: 900;
+  -webkit-text-stroke: 0.5px var(--rich-mahogany);
+  text-shadow: 2px 2px 0px var(--black);
+}
