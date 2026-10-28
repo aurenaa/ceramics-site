@@ -1,14 +1,14 @@
 :root {
-  --onyx: #0B0B0Bff;
-  --mahogany-red: #A41215ff;
-  --bright-red: #F5161C;
-  --smoky-rose: #8C5450ff;
-  --light-coral: #D89089ff;
-  --coffee-bean: #220606ff;
-  --rich-mahogany: #350306ff;
-  --black-cherry: #630C0Dff;
-  --black: #070707ff;
-  --shadow-grey: #201B1Bff;
+  --onyx: #F8F9FA;            
+  --mahogany-red: #D90429;     
+  --bright-red: #EF233C;       
+  --smoky-rose: #8D99AE;       
+  --light-coral: #EDF2F4;      
+  --coffee-bean: #FFFFFF;      
+  --rich-mahogany: #E2E8F0;    
+  --black-cherry: #EF233C;    
+  --black: #FFFFFF;            
+  --shadow-grey: #F1F5F9;      
 }
 
 * {
@@ -19,7 +19,7 @@
 
 body {
   background-color: var(--onyx);
-  color: #f8f9fa;
+  color: #2D3748;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
 }
@@ -32,7 +32,7 @@ body {
 
 .navbar {
   background-color: var(--black);
-  border-bottom: 1px solid var(--shadow-grey);
+  border-bottom: 1px solid var(--rich-mahogany);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -57,7 +57,7 @@ body {
   border-radius: 6px;
   line-height: 1.1;
   text-align: center;
-  background-color: var(--coffee-bean);
+  background-color: var(--light-coral);
   border: 1px solid var(--rich-mahogany);
 }
 
@@ -65,19 +65,17 @@ body {
   display: block;
   font-size: 1.4rem;
   letter-spacing: 1.5px;
-  color: #ffffff;
+  color: #1A202C;
   font-weight: 900;
-  -webkit-text-stroke: 0.5px var(--rich-mahogany);
-  text-shadow: 2px 2px 0px var(--black);
+  text-shadow: none;
 }
 
 .logo-bottom {
   display: block;
   font-size: 1.3rem;
   letter-spacing: 2px;
-  color: var(--bright-red);
+  color: var(--bright-red); 
   font-weight: 700;
-  -webkit-text-stroke: 0.5px var(--shadow-grey);
 }
 
 .nav-links {
@@ -88,10 +86,14 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #f8f9fa;
-  font-weight: 500;
+  color: #2D3748;
+  font-weight: 600;
   font-size: 1rem;
   transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--bright-red);
 }
 
 .btn-call {
@@ -112,21 +114,22 @@ body {
 }
 
 .hero {
-  background: linear-gradient(180deg, var(--coffee-bean) 0%, var(--onyx) 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--light-coral) 100%);
   padding: 90px 0;
   text-align: center;
-  border-bottom: 1px solid var(--shadow-grey);
+  border-bottom: 1px solid var(--rich-mahogany);
 }
 
 .hero-content h1 {
   font-size: 2.8rem;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #1A202C;
   font-weight: 800;
 }
 
 .hero-content p {
   font-size: 1.2rem;
+  color: #4A5568;
   max-width: 650px;
   margin: 0 auto 30px auto;
 }
@@ -155,7 +158,7 @@ body {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 50px;
-  color: #ffffff;
+  color: #1A202C;
   position: relative;
 }
 
@@ -166,41 +169,44 @@ body {
 }
 
 .service-card {
-  background-color: var(--shadow-grey);
-  border: 1px solid var(--shadow-grey);
+  background-color: #FFFFFF;
+  border: 1px solid var(--rich-mahogany);
   padding: 30px 20px;
   border-radius: 8px;
   text-align: center;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .service-card h3 {
   font-size: 1.25rem;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #1A202C;
 }
 
 .service-card p {
-  color: #b3b3b3;
+  color: #4A5568;
   font-size: 0.95rem;
 }
 
 .gallery-section {
-  background-color: var(--black-2);
+  background-color: var(--light-coral);
   padding: 80px 0;
   text-align: center;
-  border-top: 1px solid var(--shadow-grey);
-  border-bottom: 1px solid var(--shadow-grey);
+  border-top: 1px solid var(--rich-mahogany);
+  border-bottom: 1px solid var(--rich-mahogany);
 }
 
 .gallery-subtitle {
   text-align: center;
   margin-bottom: 40px;
   font-size: 1.1rem;
+  color: #4A5568;
 }
 
 .full-gallery-grid {
@@ -210,7 +216,7 @@ body {
 }
 
 .gallery-card {
-  background-color: var(--shadow-grey);
+  background-color: #FFFFFF;
   border: 1px solid var(--rich-mahogany);
   height: 480px;
   border-radius: 8px;
@@ -252,11 +258,11 @@ body {
 }
 
 .carousel-track .gallery-card {
-  flex: 0 0 350px;
+  flex: 0 0 350px; 
   height: 480px;
   border-radius: 8px;
   overflow: hidden;
-  background-color: var(--shadow-grey);
+  background-color: #FFFFFF;
   border: 1px solid var(--rich-mahogany);
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -276,9 +282,9 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--black-cherry);
-  color: white;
-  border: 1px solid var(--black-cherry);
+  background-color: #FFFFFF;
+  color: #1A202C;
+  border: 1px solid var(--rich-mahogany);
   font-size: 1.2rem;
   width: 45px;
   height: 45px;
@@ -288,11 +294,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
 }
 
 .carousel-btn:hover {
   background-color: var(--bright-red);
+  color: white;
   border: 1px solid var(--bright-red);
   transform: translateY(-50%) scale(1.1);
 }
@@ -311,30 +319,33 @@ body {
 }
 
 .contact-desc {
-  color: #b3b3b3;
+  color: #4A5568;
   margin-bottom: 30px;
   font-size: 1.1rem;
 }
 
 .contact-info {
-  background-color: var(--shadow-grey);
+  background-color: #FFFFFF;
   max-width: 500px;
   margin: 0 auto;
   padding: 30px;
   border-radius: 8px;
-  border: 1px solid var(--shadow-grey);
+  border: 1px solid var(--rich-mahogany);
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info p {
   font-size: 1.05rem;
+  color: #2D3748;
 }
 
 .contact-info a {
   text-decoration: none;
+  color: var(--bright-red);
 }
 
 .contact-info a:hover {
@@ -343,7 +354,6 @@ body {
 
 footer {
   background-color: var(--black);
-  color: #b3b3b3;
   padding: 60px 0 20px 0;
   border-top: 1px solid var(--shadow-grey);
 }
@@ -356,7 +366,6 @@ footer {
 }
 
 .footer-col h3, .footer-col h4 {
-  color: #ffffff;
   margin-bottom: 15px;
   font-size: 1.15rem;
 }
@@ -378,7 +387,6 @@ footer {
 
 .footer-links a, .footer-col a {
   text-decoration: none;
-  color: #b3b3b3;
   transition: color 0.3s ease;
 }
 
@@ -400,8 +408,8 @@ footer {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: var(--shadow-grey);
-  color: #ffffff;
+  background-color: var(--smoky-rose);
+  color: white;
   border-radius: 50%;
   border: 1px solid var(--rich-mahogany);
   transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
