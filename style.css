@@ -145,6 +145,7 @@ body {
 .section-title {
   text-align: center;
   font-size: 2.2rem;
+  margin-top: 50px;
   margin-bottom: 50px;
   color: #1A202C;
   position: relative;
@@ -626,6 +627,66 @@ footer {
 .service-cta-box p {
   font-size: 1.15rem;
   margin-bottom: 20px;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 7, 7, 0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-end; 
+  align-items: flex-start; 
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  transform: translateY(15px);
+  transition: transform 0.3s ease;
+}
+
+.gallery-overlay p {
+  color: var(--light-coral);
+  font-size: 0.95rem;
+  transform: translateY(15px);
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay h3,
+.gallery-card:hover .gallery-overlay p {
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
