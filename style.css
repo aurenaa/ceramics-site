@@ -578,7 +578,6 @@ footer {
   font-size: 0.95rem;
 }
 
-/* --- STRANICA CENOVNIKA --- */
 .pricing-page-section {
   padding: 60px 0;
   text-align: center;
@@ -660,7 +659,6 @@ footer {
   color: #2D3748;
 }
 
-/* Naslovi sporednih sekcija */
 .sub-section-title {
   text-align: center;
   font-size: 1.8rem;
@@ -668,7 +666,6 @@ footer {
   color: #1A202C;
 }
 
-/* Sekcija: Šta je uvek uključeno u cenu */
 .included-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -703,7 +700,90 @@ footer {
   line-height: 1.5;
 }
 
-/* Sekcija: Često postavljana pitanja (FAQ Harmonika) */
+
+.about-section {
+  padding: 60px 0;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--rich-mahogany);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-text-content {
+  flex: 1.3;
+}
+
+.about-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--bright-red);
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.about-text-content h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #1A202C;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.about-text-content p {
+  font-size: 1.05rem;
+  color: #4A5568;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-price-card {
+  flex: 0.9;
+  background-color: var(--onyx);
+  border: 1px solid var(--rich-mahogany);
+  border-radius: 12px;
+  padding: 35px 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-subtitle {
+  font-size: 0.95rem;
+  color: #718096;
+  font-weight: 600;
+  display: block;
+}
+
+.card-price {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--bright-red);
+  margin: 10px 0;
+}
+
+.card-price span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #718096;
+}
+
+.card-note {
+  font-size: 0.9rem;
+  color: #4A5568;
+  margin-bottom: 25px;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .faq-section {
   max-width: 850px;
   margin: 0 auto 60px auto;
@@ -1017,5 +1097,14 @@ footer {
 
   .service-content-box {
     padding: 30px 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-price-card {
+    width: 100%;
   }
 }
